@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*, *::before, *::after{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+
+   
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar{
+        width: 5px;
+        background: #eee;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: pink;
+    }
+}
+
+.app{
+    overflow: hidden;
+}
+
+.main-heading{
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: white;
+
+    @include Responsive(tablet){
+        font-size: 2.4rem;
+    }
+}
+
+.text-dark{
+    color:  #323751;
+}
+
+.sub-heading{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.heading-3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.heading-4{
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.para{
+    font-size: 2rem;
+}
+
+.para-light{
+    font-size: 2.4rem;
+    color:  #929292;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    @include Responsive(phone-sm){
+        font-size: 1.4rem;
+    }
+}
+
+.btn{
+    border: none;
+    width: 22rem;
+    height: 6rem;
+    border-radius: 5rem;
+    background: #59BB9F;
+    @include flex;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-shadow: 0 4px 4px rgba(0,0,0, .25);
+    color: white;
+    text-transform: capitalize;
+    
+}
+
+.section-last{
+    background: $clr-bg;
+    padding: 6rem 0 4rem 0;
+
+    @include Responsive(phone){
+        padding: 3rem 0;
+    }
+}
+
+.none{
+    display: none;
+}

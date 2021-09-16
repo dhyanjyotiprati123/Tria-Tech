@@ -1,0 +1,65 @@
+
+.testi{
+    padding: 5rem 0;
+    background: linear-gradient(90deg, #29346F -2.59%, #11184F 96.87%);
+    text-align: center;
+
+
+    &-header{
+        padding: 10rem 0;
+    }
+    &-heading{
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: white;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    &-cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &-dots{
+        @include flex;
+        gap: 1rem;
+        padding: 10rem 0 5rem 0;
+    }
+
+    &-span{
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background: white;
+    }
+}
+
+.testicard{
+    width: 35.6rem;
+    padding: 4rem 3rem;
+    background: rgba(255,255,255, .2);
+    border-radius: 2rem;
+    @include flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+    
+
+    &-para{
+        font-size: 1.6rem;
+        color: #989EB9;
+
+    }
+
+    &-header{
+        @include flex;
+        flex-direction: column;
+        gap: 1rem;
+        color: white;
+    }
+  
+    
+}

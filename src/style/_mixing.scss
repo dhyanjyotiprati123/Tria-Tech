@@ -1,0 +1,42 @@
+
+@mixin flex-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+};
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// media query section
+
+@mixin Responsive($breakpoint) {
+    @if $breakpoint == large{
+        @media screen and (max-width: 1200px) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet-land{
+        @media screen and (max-width: 992px) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet{
+        @media screen and (max-width: 768px) {
+            @content
+        }
+    };
+    @if $breakpoint == phone{
+        @media screen and (max-width: 576px) {
+            @content
+        }
+    };
+    @if $breakpoint == phone-sm{
+        @media screen and (max-width: 400px) {
+            @content
+        }
+    };
+}
